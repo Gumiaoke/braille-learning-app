@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>盲文学习App - 扫码打开</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Microsoft YaHei',sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:white;border-radius:24px;padding:40px 30px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3);max-width:400px;width:100%}
+h1{font-size:22px;color:#1a1a2e;margin-bottom:4px}
+.sub{font-size:13px;color:#888;margin-bottom:20px}
+.qr-box{background:#f8f9fa;border-radius:16px;padding:16px;display:inline-block;margin-bottom:16px}
+.qr-box img{display:block;width:240px;height:240px}
+.step{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:13px;color:#555}
+.num{background:#667eea;color:white;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;flex-shrink:0}
+.url{background:#f0f0f0;border-radius:8px;padding:10px;font-size:12px;color:#667eea;word-break:break-all;margin-top:14px;font-family:monospace}
+.note{font-size:11px;color:#999;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🐬 盲文学习App</h1>
+  <p class="sub">小海豚点点 · 智能盲文学习助手</p>
+  <div class="qr-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAklEQVR4AewaftIAAApCSURBVO3BwbEkRo4lwEdYaQEhQn8xQgjIUcPjHmbbLGDMnvwsd//r998CAI8qALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABZ+5b+g+4R/1szNn6T75MXMzad1n/xJZm4+qfuEf9bMzSdVAGChAgALFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALFQBY+JUvNHPzJ+k++TbdJ99k5ubbzNx8UvfJi5mbT+o+eTFz82kzN3+S7pNvUgGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYOFX/gW6T77JzM236T55MXPzSd0n36T75NXMzYvukxczNy+6T17M3Pxpuk++yczNT1YBgIUKACxUAGChAgALFQBYqADAQgUAFioAsFABgIUKACxUAGDhV+B/0X3yYubmk7pPXszcvJi5+TbdJy9mbj5p5gb+XxUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABZ+Bf4XMzcvuk++SffJt5m5edF98qL75JvM3PDvVgGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYOFX/gVmbvhndZ+8mLn5pO6Tn6775MXMDf+smRv+ORUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABZ+5Qt1n/B/a+bmRffJi5mbT5q5edF98mrm5kX3ySd1n7yYuXnRffJi5ubTuk/4v1MBgIUKACxUAGChAgALFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALv/JfMHPDv9vMzYvukxczNy+6T17M3LzqPnkxc8P/38wNP0sFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFv37/LR/WffJi5uZF98mfZuaGf073yafN3LzoPnkxc/OTdZ/8aWZufrIKACxUAGChAgALFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALf/3+W/iPuk9ezNz8dN0n32Tm5tt0n/DvNnPzTbpPXszcfFIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFX/kv6D75pJmbF90n36T7hJ9n5uabdJ+8mLl50X3yYubm07pPXszc/GQzN9+kAgALFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALFQBYqADAwl+//5YfrvvkxczNi+6TT5q5edV98mLm5pO6T17M3HyT7pNXMzcvuk9ezNy86D75pJmbb9N98k1mbl50n7yYufkmFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALFQBYqADAQgUAFv76/bd8me6TFzM3P1n3yU83c/Oi++STZm6+TffJJ83cfFL3ySfN3LzqPnkxc/Oi++STZm5+sgoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYKECAAu/8i/QffKTzdy86j75Jt0nL2ZuPqn75NvM3HyT7pMXMzef1H3yaubmRffJi5mbb9J98mLm5pMqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAs/PX7b/ky3ScvZm4+qfvkxczNi+6TVzM336T75JNmbl50n/Cfzdy86D55MXPzad0nL2ZuXnSffNLMzU9WAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIAC3/9/lt+uO6TbzJz8226T17M3HxS98mLmZsX3ScvZm5edZ+8mLn5pO6TT5q5edF98tPN3HxS98mLmZtvUgGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYOGv33/Lh3WffJOZm2/SffLTzdz8ZN0nnzZz86L75JNmbn667pMXMzcvuk8+aebmJ6sAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALDwK19o5uYn6z55MXPzbbpP/iQzN6+6T150n3yT7pOfbubmRffJi5mbF90nn9R98mLm5pMqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAs/MofqPvkk2ZuXnSffNrMDf+smZtP6j55MXPzSd0nnzRzw382c/NNKgCwUAGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALPz1+2/5sO6TFzM3L7pPPmnm5kX3yYuZm0/rPvmTzNy86D55NXPzovvkxczNi+6TFzM336T75NXMzU/WffJi5uabVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWPgV/nEzNy+6T17N3LyYuXnRffJi5uZF98k3mbn5tJmbF90nL2ZuPqn75Nt0n3zSzM2L7pNP6j55MXPzSRUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABb++v238K/XffJNZm5edJ/8dDM3L7pPPmnm5kX3yYuZm2/TffInmbn5pAoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYKECAAu/8l/QfcI/a+bmxczNJ3WfvOg++dN0n7yYufmk7pNv0n3yaubmJ5u5+ckqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABg4Ve+0MzNn6T75NO6Tz5p5uaTuk8+aebmVffJN+k++clmbr7NzM036T55MXPzSRUAWKgAwEIFABYqALBQAYCFCgAsVABgoQIACxUAWKgAwEIFABZ+5V+g++SbzNz8dDM3L7pPXszcfNLMzYvuk0+buXnRffJi5uaTuk9edJ/8abpPXszc/GQVAFioAMBCBQAWKgCwUAGAhQoALFQAYKECAAsVAFioAMBCBQAWfgX+F90nL2ZuXnSffJOZm0/rPvmk7pMXMzffZObmVffJi5mbF90n32Tm5ptUAGChAgALFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALFQBY+BX4PzBz86L75JO6Tz5t5uaTuk9edJ+8mLn5pO6TVzM3L7pPvkn3yYuZm29SAYCFCgAsVABgoQIACxUAWKgAwEIFABYqALBQAYCFCgAsVABg4Vf+BWZu+M9mbl50n/Cfzdy86D55MXPzYubmRffJi+6Tb9N98k1mbl50n/xkFQBYqADAQgUAFioAsFABgIUKACxUAGChAgALFQBYqADAQgUAFv76/bd8WPcJ/6yZmxfdJ99k5uZF98lPN3PzovvkxczNn6b75JNmbl50n7yYufnJKgCwUAGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALPz1+28BgEcVAFioAMBCBQAWKgCwUAGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYKECAAsVAFioAMBCBQAWKgCwUAGAhQoALFQAYOF/AC6+QsS4DvuoAAAAAElFTkSuQmCC" alt="QR"/></div>
+  <div class="step"><span class="num">1</span>打开微信</div>
+  <div class="step"><span class="num">2</span>右上角 ⊕ → 扫一扫</div>
+  <div class="step"><span class="num">3</span>扫描上方二维码</div>
+  <div class="step"><span class="num">4</span>手机上即可打开App</div>
+  <div class="url">https://e877e6c96ac3de.lhr.life</div>
+  <p class="note">⚠ 电脑保持开机即可访问 · 无需同一WiFi</p>
+</div>
+</body>
+</html>

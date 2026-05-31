@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background: #f0f4f8;
+}
+
+#root {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--app-background);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--app-foreground);
+  font-family: 'Nunito', 'Quicksand', 'Rounded Mplus 1c', 'Comic Sans MS', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
