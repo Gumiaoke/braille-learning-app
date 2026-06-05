@@ -7,11 +7,25 @@ body,
 #root {
   height: 100%;
   min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
   margin: 0;
   overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: manipulation;
   background: linear-gradient(175deg, #E3F2FD 0%, #F0F8FF 15%, #F5FAFE 30%, #FFF 55%, #F8FDFF 100%);
   color: var(--app-foreground);
   font-family: 'Nunito', 'Quicksand', 'Rounded Mplus 1c', 'Comic Sans MS', 'PingFang SC', 'Microsoft YaHei', sans-serif;
