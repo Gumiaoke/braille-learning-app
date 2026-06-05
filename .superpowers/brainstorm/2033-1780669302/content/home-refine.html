@@ -1,0 +1,57 @@
+<h2>🏠 首页打磨 - 具体优化项</h2>
+<p class="subtitle">选择你想加的功能（可多选），也可以提自己的想法</p>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="carousel" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>🔄 产品图轮播</h3>
+      <p>产品展示区支持<strong>左右滑动切换</strong>3张图：正视图 → 打开状态 → 使用场景。下方圆点指示器可点击跳转。自动轮播3秒切换。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="greeting" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>👋 时段问候语</h3>
+      <p>设备卡片上方显示<strong>动态问候</strong>：「早上好☀️ / 下午好🌤 / 晚上好🌙 + 点点」。配合IP形象的小表情变化，增加亲切感。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="streak" onclick="toggleSelect(this)">
+    <div class="letter">3</div>
+    <div class="content">
+      <h3>🔥 连续打卡标识</h3>
+      <p>设备卡片内增加<strong>「已连续学习X天」</strong>的火苗徽章。连续7天显示金色，断签显示灰色。激励每日坚持。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="onboarding" onclick="toggleSelect(this)">
+    <div class="letter">4</div>
+    <div class="content">
+      <h3>✨ 新手引导动画</h3>
+      <p>首次打开App显示<strong>3步引导浮层</strong>：① 认识产品 → ② 开始学习 → ③ 和点点聊天。圆点指示+跳过按钮，完成后再也不显示。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="quickbar" onclick="toggleSelect(this)">
+    <div class="letter">5</div>
+    <div class="content">
+      <h3>📌 快捷按钮可定制</h3>
+      <p>长按快捷按钮进入<strong>编辑模式</strong>，可拖动排序、隐藏不用的功能。支持从功能库中添加更多入口。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="weather" onclick="toggleSelect(this)">
+    <div class="letter">6</div>
+    <div class="content">
+      <h3>🎨 主题/背景随天气</h3>
+      <p>根据时间段或天气自动切换<strong>渐变背景色</strong>：早晨暖黄、午后天蓝、傍晚柔紫。产品卡片装饰元素也跟着变。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>快速建议</h3>
+  <p style="color:#888;font-size:13px">推荐先做 <strong>1+2+3</strong>（轮播+问候+打卡），实现成本低、效果明显。4和6需要更多开发量，5需要数据持久化。</p>
+</div>

@@ -1,0 +1,76 @@
+<h2>🎨 UI按钮质感方案</h2>
+<p class="subtitle">为首页快捷按钮增加视觉质感，提升产品精致度</p>
+
+<div class="section">
+<h3>方案A - 微光玻璃（推荐）</h3>
+<p style="color:#888;font-size:13px">顶部高光线 + 柔和阴影 + 轻微渐变，像一块温润的玉石</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:16px">
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:linear-gradient(180deg,rgba(255,255,255,0.9) 0%,rgba(240,248,255,0.85) 100%);
+    box-shadow:0 2px 0 rgba(255,255,255,0.8) inset,0 -2px 6px rgba(126,216,255,0.08) inset,0 4px 16px rgba(126,216,255,0.15);
+    border:1px solid rgba(255,255,255,0.6);">📚 开始学习</div>
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:linear-gradient(180deg,rgba(255,255,255,0.9) 0%,rgba(240,255,245,0.85) 100%);
+    box-shadow:0 2px 0 rgba(255,255,255,0.8) inset,0 -2px 6px rgba(155,231,196,0.08) inset,0 4px 16px rgba(155,231,196,0.15);
+    border:1px solid rgba(255,255,255,0.6);">📖 继续阅读</div>
+</div>
+</div>
+
+<div class="section">
+<h3>方案B - 软拟态凸起</h3>
+<p style="color:#888;font-size:13px">浅色投影 + 深色投影对称，按钮从背景"浮起来"</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:16px;background:#E8F0F8;border-radius:20px">
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:#E8F0F8;
+    box-shadow:6px 6px 12px rgba(166,180,200,0.4),-4px -4px 10px rgba(255,255,255,0.8);
+    border:none;">📚 开始学习</div>
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:#E8F0F8;
+    box-shadow:6px 6px 12px rgba(166,180,200,0.4),-4px -4px 10px rgba(255,255,255,0.8);
+    border:none;">📖 继续阅读</div>
+</div>
+</div>
+
+<div class="section">
+<h3>方案C - 按压深度</h3>
+<p style="color:#888;font-size:13px">按下去有"凹陷"感，配合 scale 变换和内阴影</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:16px">
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#fff;
+    background:linear-gradient(135deg,#5BA4E6,#7ED8FF);
+    box-shadow:0 4px 0 #4A90D0,0 6px 20px rgba(91,164,230,0.3);
+    border:none;
+    transition:all 0.15s;">📚 开始学习</div>
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#fff;
+    background:linear-gradient(135deg,#7DC9A0,#6DCB9E);
+    box-shadow:0 4px 0 #5DA880,0 6px 20px rgba(155,231,196,0.3);
+    border:none;">📖 继续阅读</div>
+</div>
+</div>
+
+<div class="section">
+<h3>方案D - 光泽扫过（微交互）</h3>
+<p style="color:#888;font-size:13px">按钮上有斜向光带，hover时光带滑过表面</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:16px">
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:linear-gradient(135deg,#fff 0%,#f0f6fb 50%,#e8f0f8 100%);
+    box-shadow:0 4px 16px rgba(126,216,255,0.12);
+    border:1px solid rgba(126,216,255,0.15);
+    position:relative;overflow:hidden;
+    ">📚 开始学习
+    <div style="position:absolute;top:-50%;left:-50%;width:50%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.6),transparent);transform:rotate(25deg);"></div>
+  </div>
+  <div style="width:140px;padding:18px;border-radius:24px;text-align:center;font-weight:800;font-size:13px;color:#2C3E50;
+    background:linear-gradient(135deg,#fff 0%,#f0fbf4 50%,#e8f5ed 100%);
+    box-shadow:0 4px 16px rgba(155,231,196,0.12);
+    border:1px solid rgba(155,231,196,0.15);
+    position:relative;overflow:hidden;
+    ">📖 继续阅读
+    <div style="position:absolute;top:-50%;left:-50%;width:50%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);transform:rotate(25deg);"></div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+  <h3>组合建议</h3>
+  <p style="color:#888;font-size:13px">A+D 组合效果最佳：微光玻璃做基础样式 + 光泽滑过做hover动画。既精致又有互动反馈。</p>
+</div>

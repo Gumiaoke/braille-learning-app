@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(175deg, #E3F2FD 0%, #F0F8FF 15%, #F5FAFE 30%, #FFF 55%, #F8FDFF 100%);
+  color: var(--app-foreground);
+  font-family: 'Nunito', 'Quicksand', 'Rounded Mplus 1c', 'Comic Sans MS', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes productFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes mascotBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* === A: Glass Texture Button === */
+.btn-glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(245,250,254,0.88) 100%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 -1px 4px rgba(126,216,255,0.06) inset,
+    0 2px 12px rgba(126,216,255,0.10);
+  border: 1px solid rgba(255,255,255,0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+/* === D: Shimmer Sweep on Hover === */
+.btn-glass::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 50%;
+  height: 220%;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.7) 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+  transform: rotate(22deg);
+  transition: left 0.6s ease;
+}
+
+.btn-glass:hover::after {
+  left: 120%;
+}
+
+.btn-glass:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 1px 0 rgba(0,0,0,0.04) inset,
+    0 2px 8px rgba(126,216,255,0.06);
+}

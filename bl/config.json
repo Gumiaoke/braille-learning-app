@@ -1,0 +1,24 @@
+{
+  "routes": [
+    { "path": "/", "src": "src/pages/Home.tsx" },
+    { "path": "/learn", "src": "src/pages/Learn.tsx" },
+    { "path": "/read", "src": "src/pages/Read.tsx" },
+    { "path": "/read-detail", "src": "src/pages/ReadDetail.tsx" },
+    { "path": "/practice", "src": "src/pages/Practice.tsx" },
+    { "path": "/practice/listen", "src": "src/pages/PracticeListen.tsx" },
+    { "path": "/practice/spell", "src": "src/pages/PracticeSpell.tsx" },
+    { "path": "/practice/reading", "src": "src/pages/PracticeReading.tsx" },
+    { "path": "/practice/levels", "src": "src/pages/PracticeLevels.tsx" },
+    { "path": "/ai", "src": "src/pages/AICompanion.tsx" },
+    { "path": "/grow", "src": "src/pages/Growth.tsx" },
+    { "path": "/profile", "src": "src/pages/Profile.tsx" },
+    { "path": "/parent", "src": "src/pages/ParentCenter.tsx" },
+    { "path": "/teacher", "src": "src/pages/TeacherCenter.tsx" }
+  ],
+  "components": [
+    { "name": "Layout", "src": "src/components/Layout.tsx" },
+    { "name": "BrailleDots", "src": "src/components/BrailleDots.tsx" },
+    { "name": "DolphinAvatar", "src": "src/components/DolphinAvatar.tsx" },
+    { "name": "ProgressCard", "src": "src/components/ProgressCard.tsx" }
+  ]
+}
